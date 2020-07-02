@@ -5,9 +5,13 @@ Rails.application.routes.draw do
   # EXAMPLE JSON ROUTE WITH API NAMESPACE
   namespace :api do
     get "/product" => "products#product"
+
+    get "/products" => "products#products"
+
+    get "/single_query_search" => "products#single_product"
+
+    get "/single_segment_search/:id" => "products#single_product"
+    
   end
 
-  namespace :api do
-    get "/products" => "products#products"
-  end
 end

@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+product = Product.new(
+  name: Faker::Food.fruits
+  price: Faker::Number.within(range: 1..10)
+  image_url: 
+  description: Faker::Lorem.sentence(word_count: 3)
+)
