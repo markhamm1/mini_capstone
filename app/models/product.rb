@@ -6,5 +6,10 @@ class Product < ApplicationRecord
     end
     discounted
   end
+
+  def tax
+    tax = price * 0.09
+    tax
+  end
   
 end
