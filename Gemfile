@@ -43,3 +43,5 @@ gem 'rack-cors'
 gem 'jb'
 
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+
+gem 'seed_dump'

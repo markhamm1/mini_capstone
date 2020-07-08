@@ -1,9 +1,10 @@
 {
   id: product.id,
   name: product.name,
-  price: product.price.to_s,
+  price: product.price,
   image_url: product.image_url,
   description: product.description,
+  in_stock: product.in_stock,
   formatted: {
     is_discounted: product.is_discounted?,
     tax: product.tax,
