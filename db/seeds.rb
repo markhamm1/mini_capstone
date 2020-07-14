@@ -21,6 +21,9 @@
 
 # 100.times do
 #   user = User.new(
-#     name: 
+#     name: Faker::Name.name,
+#     email: Faker::Internet.email,
+#     password: "password"
 #   )
+#   user.save
 # end
