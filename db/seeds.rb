@@ -18,3 +18,9 @@
 # products.each do |product|
 #   Image.create(url: product.image_url, product_id: product.id)
 # end
+
+# 100.times do
+#   user = User.new(
+#     name: 
+#   )
+# end

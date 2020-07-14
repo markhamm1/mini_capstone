@@ -1,5 +1,6 @@
 class Api::ProductsController < ApplicationController
-  
+
+
   def index
     if params[:search]
       @products = Product.where("name LIKE ?", "%#{params[:search]}%")
@@ -12,6 +13,10 @@ class Api::ProductsController < ApplicationController
     else
       @products = Product.all
     end
+
+    p "*" * 88
+    p current_user
+
     render 'index.json.jb'
   end
 
