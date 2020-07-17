@@ -24,6 +24,11 @@ Rails.application.routes.draw do
     get "/orders/:id" => "orders#show"
     post "/orders" => "orders#create"
 
+    get "/categoryproducts/:id" => "categoryproducts#show"
+    post "/categoryproducts/" => "categoryproducts#create"
+    patch "/categoryproducts/:id" => "categoryproducts#update"
+    delete "/categoryproducts/:id" => "categoryproducts#destroy"
+
   end
 
 end

@@ -1,0 +1,5 @@
+{
+  id: @categoryproduct.id,
+  category_id: @categoryproduct.category_id,
+  product_id: @categoryproduct.product_id
+}
