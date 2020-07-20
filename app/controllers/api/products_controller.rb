@@ -10,6 +10,9 @@ class Api::ProductsController < ApplicationController
       @products = Product.all.order(:price => :desc)
     elsif params[:sort] == "price"
       @products = Product.all.order(:price)
+    elsif params[:category] != nil
+      category = Category.find_by(name: params[:category])
+      @products = category.products
     else
       @products = Product.all
     end

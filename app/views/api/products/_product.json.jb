@@ -4,6 +4,7 @@
   price: product.price,
   image_url: product.images,
   description: product.description,
+  # category: product.category,
   in_stock: product.in_stock,
   supplier: product.supplier,
   formatted: {
