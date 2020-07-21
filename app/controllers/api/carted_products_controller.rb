@@ -12,7 +12,15 @@ class Api::CartedProductsController < ApplicationController
       quantity: params[:quantity],
       status: "carted"
     )
+    # p @carted_product.errors.full_messages
+    render 'show.json.jb'
+  end
+  
+  def destroy
+    @carted_product = CartedProduct.find_by(id: params[:id])
+    @carted_product.update(status: "removed")
     p @carted_product.errors.full_messages
+    p "*" * 78
     render 'show.json.jb'
   end
 end
